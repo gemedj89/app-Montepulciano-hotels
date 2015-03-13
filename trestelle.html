@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+	<title>Hotel Tre Stelle</title>
+	<!-- Run in full-screen mode. -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Make the status bar black with white text. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Customize home screen title. -->
+	<meta name="apple-mobile-web-app-title" content="Lemonado Web App">
+	
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Icons -->
+
+	<!-- iOS 7 iPad (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-152x152.png"
+		  sizes="152x152"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-144x144.png"
+		  sizes="144x144"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-120x120.png"
+		  sizes="120x120"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-icon-114x114.png"
+		  sizes="114x114"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPad -->
+	<link href="assets/img/apple/apple-touch-icon-76x76.png"
+		  sizes="76x76"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad -->
+	<link href="assets/img/apple/apple-touch-icon-72x72.png"
+		  sizes="72x72"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone -->
+	<link href="assets/img/apple/apple-touch-icon-57x57.png"
+		  sizes="57x57"
+		  rel="apple-touch-icon">
+
+	<!-- Startup images -->
+
+	<!-- iOS 6 & 7 iPad (retina, portrait) -->
+	<link href="assets/img/apple/apple-touch-startup-image-1536x2008.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPad (retina, landscape) -->
+	<link href="assets/img/apple/apple-touch-startup-image-1496x2048.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (portrait) -->
+	<link href="assets/img/apple/apple-touch-startup-image-768x1004.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (landscape) -->
+	<link href="assets/img/apple/apple-touch-startup-image-748x1024.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone 5 -->
+	<link href="assets/img/apple/apple-touch-startup-image-640x1096.png"
+		  media="(device-width: 320px) and (device-height: 568px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone (retina) -->
+	<link href="assets/img/apple/apple-touch-startup-image-640x920.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPhone -->
+	<link href="assets/img/apple/apple-touch-startup-image-320x460.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+	<link rel="stylesheet" href="assets/css/photoswipe.css">
+	
+	<script defer type="text/javascript" src="assets/js/klass.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jstorage.js"></script>
+	<script defer type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script defer src="assets/js/custom.js"></script>
+</head>
+<body>
+<div data-role="page" class="single-blog-slider">
+	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
+		<ul data-role="listview" data-inset="false" data-theme="b">
+			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
+			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			  
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+		
+	
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			
+			
+		</ul>
+		<div style="position: relative; top: 15px;">
+			<p>Social</p>
+			
+			<a href="https://twitter.com/HotelsPoliziani"><img src="assets/img/panel/twitter.png" alt="Twitter"></a>
+		
+			<a href="https://www.facebook.com/Montepulcianohotels"><img src="assets/img/panel/facebook.png" alt="Facebook"></a>
+			<a href="https://plus.google.com/102332852628162730990"><img src="assets/img/panel/google.png" alt="Google+"></a>
+		
+		</div>
+	</div>
+	<div data-role="panel" data-theme="b" data-position="right" data-display="push" id="right_panel">
+		<div style="text-align: center;">
+			<h4 style="margin-top: 0px;">Share this page on:</h4>
+			<div class="panel-social-wrap">
+				<a class="facebook_share_link" title="Share link on Facebook" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-twitter accent-color">
+						<img src="assets/img/facebook.png" alt="Facebook">
+					</div>
+				</a>
+				<div class="panel-social-counter facebook_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="twitter_share_link" title="Share link on Twitter" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-facebook accent-color">
+						<img src="assets/img/twitter.png" alt="Twitter">
+					</div>
+				</a>
+				<div class="panel-social-counter twitter_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="google_share_link" title="Share link on Google+" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-google accent-color">
+						<img src="assets/img/google.png" alt="Google+">
+					</div>
+				</a>
+				<div class="panel-social-counter google_number"></div>
+			</div>
+		</div>
+	</div>
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<div class="header_wrapper">
+			<a style="border-left: none;" class="header_button" href="#left_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img class="header-btn-image" style="width: 100%; height: 100%;" src="assets/img/menu.png" alt="Menu">
+				<span class="menu-btn-background"></span>
+				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
+			</a>
+			<span class="page_title">Hotel Tre Stelle</span>
+			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
+				<span class="btn-background"></span>
+			</a>
+			<a style="float: right;" class="header_button" href="#right_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+				<span class="btn-background share-btn-background"></span>
+			</a>
+			<div style="clear: both"></div>
+		</div>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div id="blog_post_4_slider" class="owl-carousel owl-active blog-post-slider">
+				<div class="item">
+					<img src="assets/img/dove-dormire/trestelle/1.jpg" >
+				</div>
+				<div class="item">
+					<img src="assets/img/dove-dormire/trestelle/2.jpg" >
+				</div>
+				
+
+                
+              
+		</div>
+		<hr style="background: #bebebe;">
+		<div class="container">
+			<article class="blog-article">
+				<h3>Hotel Tre Stelle</h3>
+				<p>L’Hotel Tre Stelle è situato in posizione favorevole, a poche centinaia di metri dalle Terme di Montepulciano, la famosa città del Vino Nobile, e a 3 km dalle Terme di Chianciano.
+Potete inoltre assaporare i piatti tipici della cucina toscana realizzati attraverso l’esperienza decennale che solo un gestione familiare può garantire. Tra i servizi presenti all’interno dell’hotel, bar e ascensore.
+COMPLETAMENTE RISTRUTTURATO NEL 2003.</p>
+
+
+
+<h3>Contatti</h3>
+                <img style="float: left;" src="assets/img/info.png" alt="Info">
+			<p style="color: #403e3e; padding-left: 35px;">Via Terme Sud, 115 53045 Montepulciano (SI)</p>
+	    <img style="float: left;" src="assets/img/tel.png" alt="Tel">
+			<p style="color: #403e3e; padding-left: 35px;"> <span dir="ltr" id=":uo">Tel. 0578 798008 / 0578 798078</span><br>
+			</p>
+            
+            <p>
+            <img style="float: left;" src="assets/img/web.png" alt="web">
+			<p style="color: #403e3e; padding-left: 35px;"> <a href="http://www.albergotrestelle.com">www.albergotrestelle.com</a></p>
+  </p>
+            
+            
+	    <img style="float: left;" src="assets/img/mail.png" alt="Email">
+			<p style="color: #403e3e; padding-left: 35px;"> hotel.trestelle@libero.it</p>
+            
+  <a href="http://www.trestellemontepulciano.com/it-IT/contatti-hotel-albergo-tre-stelle-it"> <input type="button" value="Prenota"></a>
+
+				<div class="clear"></div>
+				<hr style="background: #bebebe; margin: 30px 0;">
+			</article>
+		</div>
+				<div>
+					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
+				</div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+		<script type="text/javascript" src="assets/js/retina.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8">
+	<title>Settings Page</title>
+	<!-- Run in full-screen mode. -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- Make the status bar black with white text. -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- Customize home screen title. -->
+	<meta name="apple-mobile-web-app-title" content="Lemonado Web App">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- Icons -->
+
+	<!-- iOS 7 iPad (retina) -->
+	<link href="../assets/img/apple/apple-touch-icon-152x152.png"
+		  sizes="152x152"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad (retina) -->
+	<link href="../assets/img/apple/apple-touch-icon-144x144.png"
+		  sizes="144x144"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPhone (retina) -->
+	<link href="../assets/img/apple/apple-touch-icon-120x120.png"
+		  sizes="120x120"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone (retina) -->
+	<link href="../assets/img/apple/apple-touch-icon-114x114.png"
+		  sizes="114x114"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 7 iPad -->
+	<link href="../assets/img/apple/apple-touch-icon-76x76.png"
+		  sizes="76x76"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPad -->
+	<link href="../assets/img/apple/apple-touch-icon-72x72.png"
+		  sizes="72x72"
+		  rel="apple-touch-icon">
+
+	<!-- iOS 6 iPhone -->
+	<link href="../assets/img/apple/apple-touch-icon-57x57.png"
+		  sizes="57x57"
+		  rel="apple-touch-icon">
+
+	<!-- Startup images -->
+
+	<!-- iOS 6 & 7 iPad (retina, portrait) -->
+	<link href="../assets/img/apple/apple-touch-startup-image-1536x2008.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPad (retina, landscape) -->
+	<link href="../assets/img/apple/apple-touch-startup-image-1496x2048.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (portrait) -->
+	<link href="../assets/img/apple/apple-touch-startup-image-768x1004.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: portrait)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPad (landscape) -->
+	<link href="../assets/img/apple/apple-touch-startup-image-748x1024.png"
+		  media="(device-width: 768px) and (device-height: 1024px)
+			 and (orientation: landscape)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone 5 -->
+	<link href="../assets/img/apple/apple-touch-startup-image-640x1096.png"
+		  media="(device-width: 320px) and (device-height: 568px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 & 7 iPhone (retina) -->
+	<link href="../assets/img/apple/apple-touch-startup-image-640x920.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 2)"
+		  rel="apple-touch-startup-image">
+
+	<!-- iOS 6 iPhone -->
+	<link href="../assets/img/apple/apple-touch-startup-image-320x460.png"
+		  media="(device-width: 320px) and (device-height: 480px)
+			 and (-webkit-device-pixel-ratio: 1)"
+		  rel="apple-touch-startup-image">
+<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="../assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="../assets/css/owl.theme.css">
+	<link rel="stylesheet" href="../assets/css/photoswipe.css">
+	
+	<script defer type="text/javascript" src="../assets/js/klass.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+	<script defer type="text/javascript" src="../assets/js/jstorage.js"></script>
+	<script defer type="text/javascript" src="../assets/js/owl.carousel.min.js"></script>
+	<script defer type="text/javascript" src="../assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script defer type="text/javascript" src="../assets/js/jquery.validate.min.js"></script>
+	<script defer src="../assets/js/custom.js"></script>
+	<script type="application/javascript" src="../assets/js/addtohomescreen.min.js"></script>
+</head>
+<body>
+<div data-role="page">
+	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
+		<ul data-role="listview" data-inset="false" data-theme="b">
+			<li><div style="text-align: center;"><img src="../assets/img/logo.png" alt="Logo"></div></li>
+			<li><a data-transition="slide" href="../index.html"><img src="../assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li data-role="collapsible" data-inset="false" data-theme="b" data-content-theme="a" data-iconpos="right">
+				<h4>Admin</h4>
+				<ul data-role="listview" data-inset="false" data-theme="a">
+					<li data-theme="a"><a data-transition="slide" href="../login/index.html"><img src="../assets/img/menu-icons/key-c.png" alt="Admin" class="ui-li-icon">Login Page</a></li>
+					<li data-theme="a"><a data-transition="slide" href="../login/settings.html"><img src="../assets/img/menu-icons/key-c.png" alt="Admin" class="ui-li-icon">Settings Page</a></li>
+				</ul>
+			</li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="../news.html"><img src="../assets/img/menu-icons/news.png" alt="News" class="ui-li-icon">News<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_recipes" class="countable"><a data-transition="slide" data-count="2" href="../recipes.html"><img src="../assets/img/menu-icons/star.png" alt="Recipes" class="ui-li-icon">Recipes<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_blog" class="countable"><a data-transition="slide" data-count="3" href="../blog.html"><img src="../assets/img/menu-icons/blog.png" alt="Blog" class="ui-li-icon">Blog<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="../gallery.html"><img src="../assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="../video.html"><img src="../assets/img/menu-icons/video.png" alt="Video" class="ui-li-icon">Video<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="../information.html"><img src="../assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li><a data-transition="slide" href="../typography.html"><img src="../assets/img/menu-icons/typography.png" alt="Typorgaphy" class="ui-li-icon">Typography</a></li>
+			<li><a data-transition="slide" href="../form-elements.html"><img src="../assets/img/menu-icons/typography.png" alt="Form Elements" class="ui-li-icon">Form Elements</a></li>
+		</ul>
+		<div style="position: relative; top: 15px;">
+			<p>Social</p>
+			<a href="#"><img src="../assets/img/panel/skype.png" alt="Skype"></a>
+			<a href="#"><img src="../assets/img/panel/twitter.png" alt="Twitter"></a>
+			<a href="#"><img src="../assets/img/panel/vimeo.png" alt="Vimeo"></a>
+			<a href="#"><img src="../assets/img/panel/facebook.png" alt="Facebook"></a>
+			<a href="#"><img src="../assets/img/panel/google.png" alt="Google+"></a>
+			<a href="#"><img src="../assets/img/panel/youtube.png" alt="YouTube"></a>
+		</div>
+	</div>
+	<div data-role="panel" data-theme="b" data-position="right" data-display="push" id="right_panel">
+		<div style="text-align: center;">
+			<h4 style="margin-top: 0px;">Share this page on:</h4>
+			<div class="panel-social-wrap">
+				<a class="facebook_share_link" title="Share link on Facebook" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-twitter accent-color">
+						<img src="../assets/img/facebook.png" alt="Facebook">
+					</div>
+				</a>
+				<div class="panel-social-counter facebook_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="twitter_share_link" title="Share link on Twitter" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-facebook accent-color">
+						<img src="../assets/img/twitter.png" alt="Twitter">
+					</div>
+				</a>
+				<div class="panel-social-counter twitter_number"></div>
+			</div>
+			<div class="panel-social-wrap">
+				<a class="google_share_link" title="Share link on Google+" target="_blank" href="#" rel="nofollow">
+					<div class="panel-social panel-social-google accent-color">
+						<img src="../assets/img/google.png" alt="Google+">
+					</div>
+				</a>
+				<div class="panel-social-counter google_number"></div>
+			</div>
+		</div>
+	</div>
+	<div id="header" data-role="header" data-position="fixed" data-theme="c">
+		<div class="header_wrapper">
+			<a style="border-left: none;" class="header_button" href="#left_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img class="header-btn-image" style="width: 100%; height: 100%;" src="../assets/img/menu.png" alt="Menu">
+				<span class="menu-btn-background"></span>
+				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
+			</a>
+			<span class="page_title">Settings Page</span>
+			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="../assets/img/back.png" alt="Back">
+				<span class="btn-background"></span>
+			</a>
+			<a style="float: right;" class="header_button" href="#right_panel" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="../assets/img/share.png" alt="Share">
+				<span class="btn-background share-btn-background"></span>
+			</a>
+			<div style="clear: both"></div>
+		</div>
+	</div><!-- /header -->
+	<div data-role="content">
+		<div class="container">
+			<form id="admin_settings" name="settings" method="post">
+				<h2>Settings Storage</h2>
+				<h6>version 1.3.1</h6>
+				<h2>Sliders</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<label for="slider">Slider:</label>
+				<input type="range" name="slider" id="slider" value="50" min="0" max="100">
+				<h3>Slider with fill and step of 50:</h3>
+				<label for="slider-fill">Slider with fill and step of 50:</label>
+				<input type="range" name="slider-fill" id="slider-fill" value="60" min="0" max="1000" step="50" data-highlight="true">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Range slider</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Rangeslider:</h3>
+				<form>
+					<div data-role="rangeslider">
+						<label for="range-1a">Rangeslider:</label>
+						<input type="range" name="range-1a" id="range-1a" min="0" max="100" value="40">
+						<label for="range-1b">Rangeslider:</label>
+						<input type="range" name="range-1b" id="range-1b" min="0" max="100" value="80">
+					</div>
+				</form>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Mini rangeslider:</h3>
+				<form>
+					<div data-role="rangeslider" data-mini="true">
+						<label for="range-2a">Mini rangeslider:</label>
+						<input type="range" name="range-2a" id="range-2a" min="0" max="100" value="40">
+						<label for="range-2b">Mini rangeslider:</label>
+						<input type="range" name="range-2b" id="range-2b" min="0" max="100" value="80">
+					</div>
+				</form>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Flip switch</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Flip switch:</h3>
+				<label for="slider2">Flip switch:</label>
+				<select name="slider2" id="slider2" data-role="slider">
+					<option value="off">Off</option>
+					<option value="on">On</option>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Mini flip switch:</h3>
+				<label for="slider-flip-m">Mini flip switch:</label>
+				<select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+					<option value="off">No</option>
+					<option value="on" selected="">Yes</option>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Checkboxes</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Checkboxes, vertical controlgroup:</h3>
+				<fieldset data-role="controlgroup">
+					<legend>Checkboxes, vertical controlgroup:</legend>
+					<input type="checkbox" name="checkbox-1a" id="checkbox-1a" checked="">
+					<label for="checkbox-1a">Cheetos</label>
+					<input type="checkbox" name="checkbox-2a" id="checkbox-2a">
+					<label for="checkbox-2a">Doritos</label>
+					<input type="checkbox" name="checkbox-3a" id="checkbox-3a">
+					<label for="checkbox-3a">Fritos</label>
+					<input type="checkbox" name="checkbox-4a" id="checkbox-4a">
+					<label for="checkbox-4a">Sun Chips</label>
+				</fieldset>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Checkboxes, mini, horizontal controlgroup:</h3>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<legend>Checkboxes, mini, horizontal controlgroup:</legend>
+					<input type="checkbox" name="checkbox-6" id="checkbox-6">
+					<label for="checkbox-6">b</label>
+					<input type="checkbox" name="checkbox-7" id="checkbox-7" checked="">
+					<label for="checkbox-7"><em>i</em></label>
+					<input type="checkbox" name="checkbox-8" id="checkbox-8">
+					<label for="checkbox-8">u</label>
+				</fieldset>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Radio buttons</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Radio buttons, vertical controlgroup:</h3>
+				<fieldset data-role="controlgroup">
+					<legend>Radio buttons, vertical controlgroup:</legend>
+						<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+						<label for="radio-choice-1">Cat</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+						<label for="radio-choice-2">Dog</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3">
+						<label for="radio-choice-3">Hamster</label>
+						<input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4">
+						<label for="radio-choice-4">Lizard</label>
+				</fieldset>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Radio buttons, mini, horizontal controlgroup:</h3>
+				<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+					<legend>Radio buttons, mini, horizontal controlgroup:</legend>
+						<input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
+						<label for="radio-choice-c">List</label>
+						<input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
+						<label for="radio-choice-d">Grid</label>
+						<input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
+						<label for="radio-choice-e">Gallery</label>
+				</fieldset>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Selects</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Select, native menu</h3>
+				<label for="select-choice-1" class="select">Select, native menu</label>
+				<select name="select-choice-1" id="select-choice-1">
+					<option value="standard">Standard: 7 day</option>
+					<option value="rush">Rush: 3 days</option>
+					<option value="express">Express: next day</option>
+					<option value="overnight">Overnight</option>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Mini select, inline:</h3>
+				<label for="select-choice-mini" class="select">Mini select, inline</label>
+				<select name="select-choice-mini" id="select-choice-mini" data-mini="true" data-inline="true">
+					<option value="standard">Standard: 7 day</option>
+					<option value="rush">Rush: 3 days</option>
+					<option value="express">Express: next day</option>
+					<option value="overnight">Overnight</option>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Custom select menu:</h3>
+				<label for="select-choice-a" class="select">Custom select menu:</label>
+				<select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+					<option>Custom menu example</option>
+					<option value="standard">Standard: 7 day</option>
+					<option value="rush">Rush: 3 days</option>
+					<option value="express">Express: next day</option>
+					<option value="overnight">Overnight</option>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Multi-select with optgroups, custom icon and position:</h3>
+				<label for="select-choice-8" class="select">Multi-select with optgroups, custom icon and position:</label>
+				<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
+					<option>Choose a few options:</option>
+					<optgroup label="USPS">
+						<option value="standard" selected="">Standard: 7 day</option>
+						<option value="rush">Rush: 3 days</option>
+						<option value="express">Express: next day</option>
+						<option value="overnight">Overnight</option>
+					</optgroup>
+					<optgroup label="FedEx">
+						<option value="firstOvernight">First Overnight</option>
+						<option value="expressSaver">Express Saver</option>
+						<option value="ground">Ground</option>
+					</optgroup>
+				</select>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h2>Text inputs and Textareas</h2>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Text input:</h3>
+				<label for="text-basic">Text input:</label>
+				<input type="text" name="text-basic" id="text-basic" value="">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Textarea:</h3>
+				<label for="textarea">Textarea:</label>
+				<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Number + [0-9]* pattern:</h3>
+				<label for="number-pattern">Number + [0-9]* pattern:</label>
+				<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Date:</h3>
+				<label for="date">Date:</label>
+				<input type="date" name="date" id="date" value="">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Tel:</h3>
+				<label for="tel">Tel:</label>
+				<input type="tel" name="tel" id="tel" value="">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Search Input:</h3>
+				<label for="search">Search Input:</label>
+				<input type="search" name="password" id="search" value="" placeholder="Placeholder text...">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>File:</h3>
+				<label for="file">File:</label>
+				<input type="file" name="file" id="file" value="">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<h3>Password:</h3>
+				<label for="password">Password:</label>
+				<input type="password" name="password" id="password" value="" autocomplete="off">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+			</form>
+		</div>
+				<div>
+					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
+				</div>
+			</div><!-- /content -->
+		</div><!-- /page -->
+		<script type="text/javascript" src="../assets/js/retina.min.js"></script>
+	</body>
+</html>
