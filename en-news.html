@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head><meta charset="UTF-8">
-	<title>400 - Bad Request</title>
+	<title>News</title>
 	<!-- Run in full-screen mode. -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Make the status bar black with white text. -->
@@ -115,14 +115,14 @@
 	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
 		<ul data-role="listview" data-inset="false" data-theme="b">
 			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
-			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li><a data-transition="slide" href="en-index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
 			  
-			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="en-hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
 		
 	
-			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="en-gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="en-Music.html"><img src="assets/img/menu-icons/video.png" alt="Music" class="ui-li-icon">Music<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
 			
 			
 		</ul>
@@ -172,24 +172,88 @@
 				<span class="menu-btn-background"></span>
 				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
 			</a>
-			<span class="page_title">Bad Request</span>
+			<span class="page_title">News</span>
 			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
 				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
 				<span class="btn-background"></span>
 			</a>
-			<a style="float: right;" class="header_button" href="en-index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
-				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+			<a style="float: right;" class="header_button" href="index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/shareit.png" alt="Share">
 				<span class="btn-background share-btn-background"></span>
 			</a>
 			<div style="clear: both"></div>
 		</div>
 	</div><!-- /header -->
 	<div data-role="content">
-		<div class="container">
-			<h1 style="font-size: 10em; line-height: 1px; text-align: center;">400</h1>
-			<hr style="background: #bebebe; margin: 15px 0px;">
-			<p>Bad Request. Your request contains bad syntax and cannot be fulfilled.</p>
+		<div class="container" style="padding: 0px;">
+			<ul id="news_list" data-role="listview" data-inset="false">
+				<li><div class="news-image-wrap">
+							<div class="news-single-image-container">
+								<div class="accent-color news-image-divider"></div>
+								<a href="blog-single-4.html">
+									<img src="assets/img/content-images/1.jpg" alt="News 1">
+									<div class="news-icon-wrapper">
+										<svg class="news-icon news-single svg-accent" viewBox="0 0 500 260" preserveAspectRatio="xMinYMin meet">
+											<rect width="500" height="280" clip-path="url(#news-path)" />
+										</svg>
+										<img class="news-arrow" src="assets/img/news-arrow.png" alt="Arrow">
+									</div>
+								</a>
+								<div class="news-single-title">
+									<span class="news-single-title-text">Best Cocktail!</span>
+								</div>
+							</div>
+					</div>
+				</li>
+				<li><div class="news-image-wrap">
+							<div class="news-single-image-container">
+								<div class="accent-color news-image-divider"></div>
+								<a href="recipes.html">
+									<img src="assets/img/content-images/2.jpg" alt="News 2">
+									<div class="news-icon-wrapper">
+										<svg class="news-icon news-single svg-accent" viewBox="0 0 500 260" preserveAspectRatio="xMinYMin meet">
+											<rect width="500" height="280" clip-path="url(#news-path)" />
+										</svg>
+										<img class="news-arrow" src="assets/img/news-arrow.png" alt="Arrow">
+									</div>
+								</a>
+								<div class="news-single-title">
+									<span class="news-single-title-text">Most Recent Recipes</span>
+								</div>
+							</div>
+					</div>
+				</li>
+				<li><div class="news-image-wrap">
+							<div class="news-single-image-container">
+								<div class="accent-color news-image-divider"></div>
+								<a href="blog-single-5.html">
+									<img src="assets/img/content-images/3.jpg" alt="News 3">
+									<div class="news-icon-wrapper">
+										<svg class="news-icon news-single svg-accent" viewBox="0 0 500 260" preserveAspectRatio="xMinYMin meet">
+											<rect width="500" height="280" clip-path="url(#news-path)" />
+										</svg>
+										<img class="news-arrow" src="assets/img/news-arrow.png" alt="Arrow">
+									</div>
+								</a>
+								<div class="news-single-title">
+									<span class="news-single-title-text">Fresh and Ready</span>
+								</div>
+							</div>
+					</div>
+				</li>
+			</ul>
 		</div>
+		<!-- Do not remove this SVG shape below -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: 0px; display: block;">
+			<defs>
+				<clipPath id="news-path">
+					<path fill-rule="evenodd" clip-rule="evenodd" fill="#666666" d="M614.557,0c0,81.931,0,170.339,0,252.279
+		c-77.667-1.666-273,7.001-344.148-11.379C193.505,221.033,161.631,137.386,117.99,78.661C99.345,53.564,64.266,22.639,34.419,9.832
+		C24.245,5.466,9.182,5.029,0,0C204.833,0,409.725,0,614.557,0z"/>
+				</clipPath>
+			</defs>
+		</svg>
+		<!-- Do not remove <svg> above -->
 				<div>
 					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
 				</div>

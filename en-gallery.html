@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head><meta charset="UTF-8">
-	<title>400 - Bad Request</title>
+	<title>Gallery</title>
 	<!-- Run in full-screen mode. -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Make the status bar black with white text. -->
@@ -115,14 +115,14 @@
 	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
 		<ul data-role="listview" data-inset="false" data-theme="b">
 			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
-			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li><a data-transition="slide" href="en-index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
 			  
-			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="en-hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
 		
 	
-			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="en-gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="en-Music.html"><img src="assets/img/menu-icons/video.png" alt="Music" class="ui-li-icon">Music<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
 			
 			
 		</ul>
@@ -172,13 +172,13 @@
 				<span class="menu-btn-background"></span>
 				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
 			</a>
-			<span class="page_title">Bad Request</span>
+			<span class="page_title">Gallery</span>
 			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
 				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
 				<span class="btn-background"></span>
 			</a>
-			<a style="float: right;" class="header_button" href="en-index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
-				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+			<a style="float: right;" class="header_button" href="index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/shareit.png" alt="Share">
 				<span class="btn-background share-btn-background"></span>
 			</a>
 			<div style="clear: both"></div>
@@ -186,9 +186,14 @@
 	</div><!-- /header -->
 	<div data-role="content">
 		<div class="container">
-			<h1 style="font-size: 10em; line-height: 1px; text-align: center;">400</h1>
-			<hr style="background: #bebebe; margin: 15px 0px;">
-			<p>Bad Request. Your request contains bad syntax and cannot be fulfilled.</p>
+			
+			<ul class="gallery gallery-active">
+				<li><a href="assets/img/gallery/1.jpg" rel="external"><img src="assets/img/gallery/mini/1.jpg" alt="Image 004" /></a></li>
+				<li><a href="assets/img/gallery/2.jpg" rel="external"><img src="assets/img/gallery/mini/2.jpg" alt="Image 005" /></a></li>
+				<li><a href="assets/img/gallery/3.jpg" rel="external"><img src="assets/img/gallery/mini/3.jpg" alt="Image 006" /></a></li>
+				<li><a href="assets/img/gallery/4.jpg" rel="external"><img src="assets/img/gallery/mini/4.jpg" alt="Image 004" /></a></li>
+				<li><a href="assets/img/gallery/5.jpg" rel="external"><img src="assets/img/gallery/mini/5.jpg" alt="Image 005" /></a></li>
+			</ul>
 		</div>
 				<div>
 					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>

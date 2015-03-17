@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head><meta charset="UTF-8">
-	<title>400 - Bad Request</title>
+	<title>Hotel Panoramic</title>
 	<!-- Run in full-screen mode. -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Make the status bar black with white text. -->
@@ -111,18 +111,18 @@
 	<script defer src="assets/js/custom.js"></script>
 </head>
 <body>
-<div data-role="page">
+<div data-role="page" class="single-blog-slider">
 	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
 		<ul data-role="listview" data-inset="false" data-theme="b">
 			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
-			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li><a data-transition="slide" href="en-index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
 			  
-			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="en-hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
 		
 	
-			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="en-gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="en-Music.html"><img src="assets/img/menu-icons/video.png" alt="Music" class="ui-li-icon">Music<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
 			
 			
 		</ul>
@@ -172,23 +172,83 @@
 				<span class="menu-btn-background"></span>
 				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
 			</a>
-			<span class="page_title">Bad Request</span>
+			<span class="page_title">Hotel Panoramic</span>
 			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
 				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
 				<span class="btn-background"></span>
 			</a>
-			<a style="float: right;" class="header_button" href="en-index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
-				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+			<a style="float: right;" class="header_button" href="index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/shareit.png" alt="Share">
 				<span class="btn-background share-btn-background"></span>
 			</a>
 			<div style="clear: both"></div>
 		</div>
 	</div><!-- /header -->
 	<div data-role="content">
+		<div id="blog_post_4_slider" class="owl-carousel owl-active blog-post-slider">
+				<div class="item">
+					<img src="assets/img/dove-dormire/panoramic/1.jpg" >
+				</div>
+				<div class="item">
+					<img src="assets/img/dove-dormire/panoramic/2.jpg" >
+				</div>
+				<div class="item">
+					<img src="assets/img/dove-dormire/panoramic/3.jpg" >
+				</div>
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/4.jpg" >
+				</div>
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/5.jpg" >
+				</div>
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/6.jpg" >
+				</div>
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/7.jpg" >
+				</div>
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/8.jpg" >
+				</div>
+              
+                <div class="item">
+					<img src="assets/img/dove-dormire/panoramic/10.jpg" >
+				</div>
+		</div>
+		<hr style="background: #bebebe;">
 		<div class="container">
-			<h1 style="font-size: 10em; line-height: 1px; text-align: center;">400</h1>
-			<hr style="background: #bebebe; margin: 15px 0px;">
-			<p>Bad Request. Your request contains bad syntax and cannot be fulfilled.</p>
+			<article class="blog-article">
+				<h3>Hotel Panoramic</h3>
+				<p>Hotel with swimming pool in the Tuscan countryside. Our fees include overnight stay and a buffet breakfast with fresh cakes, a wide variety of cheeses, cold cuts, yogurt, fruit juices, jams, honey, and coffee bar.
+All the rooms have been recently renovated and have toilet facilities with 90×120 cm shower, king-size bed, TV sat LCD, SKY free,telephone, parquet floor, living room, free WI FI also in pool, minibar, air-conditioning, independent heating system, safe, fire resistant tissues, sound-proof walls, lift, left-luggage room and balcony (on request).
+The hotel is surrounded by a large garden which offers a breath-taking view over the Tuscan countryside.
+Hydro-massage swimming pool and solarium, sunbeds and umbrellas at no extra charge. Free parking lot. W provide transport service from/to Montepulciano at request. Bedroom service 24 hours a day. English-speaking personnel. All credit cards accepted. The hotel’s energy consumption is fully covered by renewable sources.
+Pet-friendly hotel. Internet point. Tennis court. Ping Pong.
+Our qualified personnel will welcome you at the reception and answer any question you have to make your stay in Montepulciano as comfortable as possible.</p>
+				<h3>Contacts</h3>
+                <img style="float: left;" src="assets/img/info.png" alt="Info">
+			<p style="color: #403e3e; padding-left: 35px;">Via di Villa Bianca, 8 53045 Montepulciano (SI)<br>
+Coordinate Satellitari: 43.076325,11.791854 (on Google Maps and OpenStreetMap)</p>
+	    <img style="float: left;" src="assets/img/tel.png" alt="Tel">
+			<p style="color: #403e3e; padding-left: 35px;"> <span dir="ltr" id=":uo">Tel. 0578 798398-798394 | Fax 0578 799205</span><br>
+			</p>
+            
+            <p>
+            <img style="float: left;" src="assets/img/web.png" alt="web">
+			<p style="color: #403e3e; padding-left: 35px;"> <a href="http://www.hotelpanoramic.com">www.hotelpanoramic.com</a></p>
+  </p>
+            
+            
+	    <img style="float: left;" src="assets/img/mail.png" alt="Email">
+			<p style="color: #403e3e; padding-left: 35px;"> info@hotelpanoramic.com</p>
+            
+            
+           <a href="https://hotelpanoramic.hottimobooking.com/Reservation/SmartManager/"> <input type="button" value="Book Now"></a>
+            
+           
+			  <div class="clear"></div>
+				<hr style="background: #bebebe; margin: 30px 0;">
+			</article>
 		</div>
 				<div>
 					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
