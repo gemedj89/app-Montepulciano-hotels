@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget id="com.mhotels" version="2.0.1" xmlns="http://www.w3.org/ns/widgets">
+<widget id="com.mhotels" version="2.0.2" xmlns="http://www.w3.org/ns/widgets">
     <name> Montepulciano Hotels
 </name>
-    <description> Montepulciano Hotels </description>
+    <description> Montepulciano Hotels</description>
 	<icon src="icon.png" />
     <author href="http://montepulcianohotels.it" email="info@montepulcianohotels.it"> Montepulciano Hotels</author>
     <access origin="http://*/*" />

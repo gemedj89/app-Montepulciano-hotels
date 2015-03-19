@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head><meta charset="UTF-8">
-	<title>400 - Bad Request</title>
+	<title>Music</title> 
 	<!-- Run in full-screen mode. -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Make the status bar black with white text. -->
@@ -115,14 +115,14 @@
 	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
 		<ul data-role="listview" data-inset="false" data-theme="b">
 			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
-			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li><a data-transition="slide" href="en-index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
 			  
-			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="en-hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
 		
 	
-			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="en-gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="en-musics.html"><img src="assets/img/menu-icons/video.png" alt="Music" class="ui-li-icon">Music<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
 			
 			
 		</ul>
@@ -172,13 +172,13 @@
 				<span class="menu-btn-background"></span>
 				<span class="counter-header hidden accent-color" style="color: #ffffff;"></span>
 			</a>
-			<span class="page_title">Bad Request</span>
+			<span class="page_title">Music</span>
 			<a style="float: right; border: none;" class="header_button" href="#" data-inline="true" data-rel="back" data-role="button" data-corners="false" data-theme="c">
 				<img style="width: 100%; height: 100%;" src="assets/img/back.png" alt="Back">
 				<span class="btn-background"></span>
 			</a>
-			<a style="float: right;" class="header_button" href="en-index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
-				<img style="width: 100%; height: 100%;" src="assets/img/share.png" alt="Share">
+			<a style="float: right;" class="header_button" href="index.html" data-inline="true" data-role="button" data-corners="false" data-theme="c">
+				<img style="width: 100%; height: 100%;" src="assets/img/shareit.png" alt="Share">
 				<span class="btn-background share-btn-background"></span>
 			</a>
 			<div style="clear: both"></div>
@@ -186,15 +186,32 @@
 	</div><!-- /header -->
 	<div data-role="content">
 		<div class="container">
-			<h1 style="font-size: 10em; line-height: 1px; text-align: center;">400</h1>
-			<hr style="background: #bebebe; margin: 15px 0px;">
-			<p>Bad Request. Your request contains bad syntax and cannot be fulfilled.</p>
-		</div>
-				<div>
-					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
+			<h3>Noi sosteniamo la bella Music</h3>
+			<p>L’associazione Albergatori Montepulciano sostiene la buona Music ed i giovani artisti emergenti . Suggeriamo di ritagliarvi un momento di relax e lasciarsi trasportare dalle splendide melodie dei nostri giovani artisti emergenti.
+Esprimete il vostro gradimento ascoltando la loro Music su youtube…un piccolo gesto che per un artista ha un grande valore</p>
+			
+			<hr style="background: #bebebe; margin: 30px 0;">
+			<article class="video-article">
+				<h3 class="video-article-title">The Noobs - It's a Man's World</h3>
+				<div class="video-thumbnail">
+					<div class="video-thumbnail-inner">
+						<a href="https://www.youtube.com/watch?v=LIGlEMPKuTk" data-rel="popup">
+							<img src="assets/img/content-images/video-article-1.jpg" alt="Video Image 1">
+						</a>
+					</div>
 				</div>
-			</div><!-- /content -->
-		</div><!-- /page -->
-		<script type="text/javascript" src="assets/js/retina.min.js"></script>
+				<!--<div data-role="popup" id="video-1" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content video-popup">
+					<iframe src="http://player.vimeo.com/video/32312136?title=0&amp;byline=0&amp;portrait=0&amp;color=c9ff23" width="500" height="281"></iframe>
+				</div> -->
+				<hr style="background: #bebebe; margin: 30px 0;">
+			</article>
+			
+		</div>
+		<div>
+			<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>
+		</div>
+	</div><!-- /content -->
+</div><!-- /page -->
+	<script type="text/javascript" src="assets/js/retina.min.js"></script>
 	</body>
 </html>
