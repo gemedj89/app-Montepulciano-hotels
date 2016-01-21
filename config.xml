@@ -3,6 +3,13 @@
     <name> Montepulciano Hotels
 </name>
     <description> Montepulciano Hotels</description>
+	
+	
+	
+	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+<access origin="*"/>
+	
+	
 	<icon src="icon.png" />
     <author href="http://montepulcianohotels.it" email="info@montepulcianohotels.it"> Montepulciano Hotels</author>
     <access origin="http://*/*" />
