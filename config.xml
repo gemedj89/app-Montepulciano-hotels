@@ -6,7 +6,7 @@
 	
 	
 	
-<gap:plugin name="org.apache.cordova.inappbrowser" />
+<gap:plugin name="org.apache.cordova.inappbrowser"/>
 
 
  
