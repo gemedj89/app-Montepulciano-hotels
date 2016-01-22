@@ -6,7 +6,7 @@
 	
 	
 	
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.2" />
+<plugin name="org.apache.cordova.inappbrowser" spec="0.3.3" source="pgb" />
 
 
   <access origin="*" />
