@@ -7,8 +7,7 @@
 	
 	
 <gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.3" />
-  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.2" />
-  <gap:plugin name="com.phonegap.plugins.pushplugin" version="2.0.5" />
+
 
   <plugins>
     <plugin name="InAppBrowser" value="CDVInAppBrowser" />
