@@ -20,7 +20,12 @@
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVInvokedUrlCommand.h>
 #import <Cordova/CDVScreenOrientationDelegate.h>
-#import <Cordova/CDVWebViewDelegate.h>
+
+#ifdef __CORDOVA_4_0_0
+    #import <Cordova/CDVUIWebViewDelegate.h>
+#else
+    #import <Cordova/CDVWebViewDelegate.h>
+#endif
 
 @class CDVInAppBrowserViewController;
 
@@ -45,6 +50,8 @@
 @property (nonatomic, assign) BOOL toolbar;
 @property (nonatomic, copy) NSString* closebuttoncaption;
 @property (nonatomic, copy) NSString* toolbarposition;
+@property (nonatomic, assign) BOOL clearcache;
+@property (nonatomic, assign) BOOL clearsessioncache;
 
 @property (nonatomic, copy) NSString* presentationstyle;
 @property (nonatomic, copy) NSString* transitionstyle;
@@ -61,13 +68,19 @@
 
 @end
 
-@interface CDVInAppBrowserViewController : UIViewController <UIWebViewDelegate>{
+@interface CDVInAppBrowserViewController : UIViewController <UIWebViewDelegate, CDVScreenOrientationDelegate>{
     @private
     NSString* _userAgent;
     NSString* _prevUserAgent;
     NSInteger _userAgentLockToken;
     CDVInAppBrowserOptions *_browserOptions;
+    
+#ifdef __CORDOVA_4_0_0
+    CDVUIWebViewDelegate* _webViewDelegate;
+#else
     CDVWebViewDelegate* _webViewDelegate;
+#endif
+    
 }
 
 @property (nonatomic, strong) IBOutlet UIWebView* webView;
@@ -91,3 +104,10 @@
 - (id)initWithUserAgent:(NSString*)userAgent prevUserAgent:(NSString*)prevUserAgent browserOptions: (CDVInAppBrowserOptions*) browserOptions;
 
 @end
+
+@interface CDVInAppBrowserNavigationController : UINavigationController
+
+@property (nonatomic, weak) id <CDVScreenOrientationDelegate> orientationDelegate;
+
+@end
+

@@ -80,5 +80,113 @@
 * Removed some iOS6 Deprecations
 
 ### 0.3.3 (Mar 5, 2014)
+* CB-5534 Fix video/audio does not stop playing when browser is closed
 * CB-6172 Fix broken install on case-sensitive file-systems
 
+
+### 0.4.0 (Apr 17, 2014)
+* CB-6360: [ios] Fix for crash on iOS < 6.0 (closes #37)
+* CB-3324: [WP8] Add support for back-button inappbrowser [WP8] if there is no history -> InAppBrowser is closed
+* [WP] await async calls, resolve warnings
+* [WP] Make InAppBrowser work with embedded files, using system behavior
+* CB-6402: [WP8] pass empty string instead of null for [optional] windowFeatures string
+* CB-6422: [windows8] use cordova/exec/proxy
+* CB-6389 CB-3617: Add clearcache and clearsessioncache options to iOS (like Android)
+* Doc update: event name and example param (closes #31)
+* CB-6253: [WP] Add Network Capability to WMAppManifest.xml
+* CB-6212: [iOS] fix warnings compiled under arm64 64-bit
+* CB-6218: Update docs for BB10
+* CB-6460: Update license headers
+
+### 0.5.0 (Jun 05, 2014)
+* CB-6127 Spanish and rench Translations added. Github close #23
+* Clean up whitespace (mainly due to no newline at eof warning)
+* Adding permission info
+* CB-6806 Add license
+* CB-6491 add CONTRIBUTING.md
+* Add necessary capability so the plugin works on its own
+* CB-6474 InAppBrowser. Add data urls support to WP8
+* CB-6482 InAppBrowser calls incorrect callback on WP8
+* Fixed use of iOS 6 deprecated methods
+* CB-6360 - improvement: feature detection instead of iOS version detection
+* CB-5649 - InAppBrowser overrides App's orientation
+* refactoring fixed
+* CB-6396 [Firefox OS] Adding basic support
+
+### 0.5.1 (Aug 06, 2014)
+* ubuntu: support qt 5.2
+* **FFOS** update InAppBrowserProxy.js
+* **FFOS** app needs to be privileged
+* CB-6127 Updated translations for docs
+* CB-6769 ios: Fix statusbar color reset wasn't working on iOS7+
+
+### 0.5.2 (Sep 17, 2014)
+* CB-7471 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser
+* CB-7490 Fixes InAppBrowser manual tests crash on windows platform
+* CB-7249 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser
+* CB-7424 Wrong docs: anchor tags are not supported by the InAppBrowser
+* CB-7133 clarify that anchor1 doesn't exist
+* CB-7133 more fixup of tests on Android
+* CB-7133 fix up the tests for Android
+* Add just a bit more logging
+* CB-7133 port inappbrowser to plugin-test-framework
+* phonegap events supported for \_blank target
+* inappbrowser \_blank target position is fixed
+* amazon-fireos related changes.
+
+### 0.5.3 (Oct 03, 2014)
+* Windows implementation fixes and improvements
+* zIndex fixed
+* renamed InAppBrowser back to inappbrowser for case sensitive operating systems
+* Update french translation
+* Update doc to add Windows 8
+* Update windows proxy to be both compatible with windows 8 and 8.1
+* Rename windows81 by windows8 in src directory
+* Append Windows 8.1 platform configuration in plugin.xml
+* Append Windows 8.1 proxy using x-ms-webview
+
+### 0.5.4 (Dec 02, 2014)
+* CB-7784 Exit event is not fired after `InAppBrowser` closing
+* CB-7697 Add `locationBar` support to `InAppBrowser` **Windows** platform version
+* CB-7690 `InAppBrowser` `loadstart/loadstop` events issues
+* CB-7695 Fix `InAppBrowser` `injectScriptFile` for **Windows 8.1** / **Windows Phone 8.1**
+* CB-7692 `InAppBrowser` local url opening bug in 8.1
+* CB-7688 `Alert` is not supported in `InAppBrowser` on **Windows** platform
+* CB-7977 Mention `deviceready` in plugin docs
+* CB-7876 change test target to avoid undesired redirects
+* CB-7712 remove references to `closebuttoncaption`
+* CB-7850 clarify role of whitelist
+* CB-7720 check if event is null since OK string from success callback was removed
+* CB-7471 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser
+
+### 0.6.0 (Feb 04, 2015)
+* CB-8270 ios: Remove usage of `[arr JSONString]`, since it's been renamed to `cdv_JSONString`
+* ubuntu: implement inject* functions
+* ubuntu: port to oxide
+* CB-7897 ios, android: Update to work with whilelist plugins in Cordova 4.x
+
+### 1.0.0 (Apr 15, 2015)
+* CB-8746 gave plugin major version bump
+* CB-7689 Adds insertCSS support for windows platform
+* CB-4930 - (prefix) InAppBrowser should take into account the status bar
+* CB-8635 Improves UX on windows platform
+* CB-8661 Return executed script result on Windows
+* CB-8683 updated wp and browser specific references of old id to new id
+* CB-8683 changed plugin-id to pacakge-name
+* CB-8653 properly updated translated docs to use new id
+* CB-8653 updated translated docs to use new id
+* Use TRAVIS_BUILD_DIR, install paramedic by npm
+* CB-8432 Correct styles for browser wrapper to display it correctly on some pages
+* CB-8659 - Update InAppBrowser to support both cordova-ios 4.0.x and 3.x (closes #93)
+* CB-7961 Add cordova-plugin-inappbrowser support for browser platform
+* CB-8653 Updated Readme
+* Update docs for Android zoom=no option
+* Added option to disable/enable zoom controls
+* updated docs, set hardwareback default to true
+* Add a hardwareback option to allow for the hardware back button to go back.
+* CB-8570 Integrate TravisCI
+* CB-8438 cordova-plugin-inappbrowser documentation translation: cordova-plugin-inappbrowser
+* CB-8538 Added package.json file
+* Keep external android pages in a single tab. (close #61)
+* CB-8444 Add a clobber for `cordova.InAppBrowser.open` (close #80)
+* CB-8444 Don't clobber `window.open` - Add new symbol/clobber to access open function (`cordova.InAppBrowser.open`) - Change existing tests to use new symbol (i.e. don't rely on plugin clobber of `window.open`) - Add tests to use `window.open` via manual replace with new symbol - Update docs to deprecate plugin clobber of `window.open`
