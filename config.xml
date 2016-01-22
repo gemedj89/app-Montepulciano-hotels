@@ -19,7 +19,7 @@
   </feature>
   <access origin="*" />
 	
-	
+
 	<icon src="icon.png" />
     <author href="http://montepulcianohotels.it" email="info@montepulcianohotels.it"> Montepulciano Hotels</author>
     <access origin="http://*/*" />
