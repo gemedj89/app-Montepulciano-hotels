@@ -6,16 +6,12 @@
 	
 	
 	
-<gap:plugin name="org.apache.cordova.inappbrowser" version="0.2.3" />
+<gap:plugin name="org.apache.cordova.inappbrowser" />
 
 
-  <plugins>
-    <plugin name="InAppBrowser" value="CDVInAppBrowser" />
-  </plugins>
+ 
 
-  <feature name="InAppBrowser">
-    <param name="ios-package" value="CDVInAppBrowser" />
-  </feature>
+  
   <access origin="*" />
 	
 
