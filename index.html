@@ -116,6 +116,25 @@
 			skipFirstVisit: true
 		});
 	</script>
+    
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+         var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         ref.addEventListener('exit', function(event) { alert(event.type); });
+    }
+
+    </script>
 </head>
 <body>
  <div data-role="page" id="home">
@@ -259,7 +278,7 @@ Piazza Grande 7 Montepulciano<br>
 Tel: 0039 333 9080979<br>
 
 Email :info@montepulcianohotels.it<br>
-				  Web : <a href="www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
+				  Web : <a href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
 			  </div>
 				<hr style="background: #bebebe; margin: 15px 0px;">
 			</div>

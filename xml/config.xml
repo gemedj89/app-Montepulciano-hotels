@@ -4,6 +4,10 @@
 </name>
     <description> Montepulciano Hotels </description>
 	<icon src="icon.png" />
+	
+	<feature name="InAppBrowser">
+    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+</feature>
     <author href="http://montepulcianohotels.it" email="info@montepulcianohotels.it"> Montepulciano Hotels</author>
     <access origin="http://*/*" />
     <access origin="https://*/*" />
