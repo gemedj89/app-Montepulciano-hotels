@@ -267,6 +267,14 @@ Email :info@montepulcianohotels.it<br>
    return false;">_system</a>
 </p>
 
+<script>
+    function openExternal(elem) {
+        window.open(elem.href, "_system");
+        return false; // Prevent execution of the default onClick handler 
+    }
+</script>
+<a href="https://www.twitter.com" onClick="javascript:return openExternal(this)">seconda prova</a>
+
 
 			  </div>
 				<hr style="background: #bebebe; margin: 15px 0px;">
