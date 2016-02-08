@@ -100,17 +100,22 @@
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
 	<link rel="stylesheet" href="assets/css/photoswipe.css">
 	<link rel="stylesheet" href="assets/css/addtohomescreen.css">
-
+	<script defer type="text/javascript" src="assets/js/klass.min.js"></script>
     <!--SCRIPT IN LOCALE  -->
-
-    
-     <script type="text/javascript" charset="utf-8" src="cordova-.js"></script>
-    <script type="text/javascript" charset="utf-8">
-	 function onDeviceReady() {
-          document.getElementById("hint").textContent = "Running CordovaWebView, deviceVersion=" + device.version + ", no toolbar should be present, Back link should work, logcat should NOT have failed 'gap:' calls.";
-      }
-      document.addEventListener("deviceready", onDeviceReady, false);
-    </script>
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.mobile-1.4.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jstorage.js"></script>
+	<script defer type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
+	<script defer type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+	<script defer src="assets/js/custom.js"></script>
+	<script type="application/javascript" src="assets/js/addtohomescreen.min.js"></script>
+	<script type="text/javascript">
+		addToHomescreen({
+			startDelay: 5,
+			skipFirstVisit: true
+		});
+	</script>
 </head>
 <body>
  <div data-role="page" id="home">
@@ -254,70 +259,7 @@ Piazza Grande 7 Montepulciano<br>
 Tel: 0039 333 9080979<br>
 
 Email :info@montepulcianohotels.it<br>
-				  Web : <a href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
-                  
-                  
-                  
-                  
-                  
-                  <a href="multipage.html" rel="external">Multi-page link</a>
-                  
-                  
-                  <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
-				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d ui-corner-top">Links that will be Ajax-loaded with page transitions</li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="../../index.html" class="ui-link-inherit">Link in the same domain</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="../pages/dialog.html" data-rel="dialog" class="ui-link-inherit">Dialog link: data-rel="dialog" (not tracked in history)</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Links that will refresh the page</li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.google.it/index.html" class="ui-link-inherit">External domain</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-hover-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.google.it/index.html" rel="external" class="ui-link-inherit">Link with rel="external"</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-d"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.google.it/index.html" data-ajax="false" class="ui-link-inherit">link with [data-ajax="false"]</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.google.it/index.html" target="foo" class="ui-link-inherit">Link with target="foo"</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Email links</li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="mailto:jdoe@foo.com" class="ui-link-inherit">Basic email: mailto:jdoe@foo.com</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="mailto:jdoe@foo.com?cc=bill@bar.com&amp;bcc=mark@abc.com&amp;subject=Happy%20Birthday&amp;body=Best%20wishes!" class="ui-link-inherit">Mailto with a cc:, bcc:, subject and body pre-filled</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-
-				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Phone links</li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="tel:15555555555" class="ui-link-inherit">Phone: tel:15555555555</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-				<li data-role="list-divider" role="heading" class="ui-li ui-li-divider ui-bar-d">Other</li>
-				<li data-corners="false" data-shadow="false" data-iconshadow="true" data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" data-theme="d" class="ui-btn ui-btn-up-d ui-btn-icon-right ui-li-has-arrow ui-li ui-corner-bottom ui-li-last"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a href="http://www.google.it/index.html" class="ui-link-inherit">A href="#" will return false</a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li>
-			</ul>
-   <h1>Local URL</h1>
-    <div id="info">
-        You have successfully loaded a local URL:
-        <script>document.write(location.href)</script>
-    </div>
-    <hr />
-    <div>User-Agent = <span id="u-a"></span></div>
-    <hr />
-    <div id="hint">Likely running inAppBrowser: Device version from Cordova=not found, Back link should not work, toolbar may be present, logcat should show failed 'gap:' calls.</div>
-    <hr />
-    <div><a href="http://www.google.com">Visit Google</a> (whitelisted)</div>
-    <div><a href="http://www.yahoo.com">Visit Yahoo</a> (not whitelisted)</div>
-    <div><a href="http://www.stluciadance.com/prospectus_file/sample.pdf">Check out my remote PDF</a></div>
-    <div><a href="local.pdf">Check out my local PDF</a></div>
-    <p /><a href="javascript:;" onclick="history.back();">Back</a>
-    <p />
-    <a name="anchor2"></a>
-    <div style="height: 1000px;border:1px solid red;">tall div with border</div>
-  </body>
-  <script>
-      function updateUserAgent() {
-          document.getElementById("u-a").textContent = navigator.userAgent;
-      }
-      updateUserAgent();
-      window.setInterval(updateUserAgent, 1500);
-  </script>
-                  <p>
- <a href="#"  onclick="window.open('http://www.google.com', '_system', 'location=no');   return false;">_system</a>
- <a href="http://www.twitter.com" target="_system">Open twitter</a>
- 
- <a href="http://www.twitter.com" target="_blank">  BLAN K</a>
- 
-</p>
-
-<a href="https://www.twitter.com" onClick="javascript:return openExternal(this)">seconda provaa</a>
-
-
+				  Web : <a href="www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
 			  </div>
 				<hr style="background: #bebebe; margin: 15px 0px;">
 			</div>
