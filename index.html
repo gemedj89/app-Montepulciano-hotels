@@ -285,7 +285,22 @@ function onDeviceReady() {
  
  
    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-   
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        // external url
+        var ref = window.open(encodeURI('http://apache.org'), '_blank', 'location=yes');
+        // relative document
+        ref = window.open('http://apache.org', '_self');
+    }
+
+    </script>
                   <p>
  <a href="#"  onclick="window.open('http://www.google.com', '_system', 'location=no');   return false;">_system</a>
  <a href="http://www.twitter.com" target="_system">Open twitter</a>
