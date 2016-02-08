@@ -260,11 +260,17 @@ Tel: 0039 333 9080979<br>
 
 Email :info@montepulcianohotels.it<br>
 				  Web : <a href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
-                  
+ <script>
+ $('a[target=_blank]').on('click', function(e) {
+e.preventDefault();
+window.open($(this).attr('href'), '_system');
+return false;
+});
+ </script>                 
                   <p>
- <a href="#" 
-  onclick="window.open('http://www.google.com', '_system', 'location=no'); 
-   return false;">_system</a>
+ <a href="#"  onclick="window.open('http://www.google.com', '_system', 'location=no');   return false;">_system</a>
+ <a href="http://www.twitter.com" target="_system">Open twitter</a>
+ 
 </p>
 
 <script>
@@ -272,6 +278,8 @@ Email :info@montepulcianohotels.it<br>
         window.open(elem.href, "_system");
         return false; // Prevent execution of the default onClick handler 
     }
+	
+	var ref = cordova.InAppBrowser.open('http://apache.org', '_blank', 'location=yes');
 </script>
 <a href="https://www.twitter.com" onClick="javascript:return openExternal(this)">seconda provaa</a>
 
