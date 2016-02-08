@@ -13,14 +13,11 @@
  <access origin="*" browserOnly="true" /> <!-- Allow external links, but only through the browser -->
 
 
-
-  <access origin="*" />
 	
 
 	<icon src="icon.png" />
     <author href="http://montepulcianohotels.it" email="info@montepulcianohotels.it"> Montepulciano Hotels</author>
-    <access origin="http://*/*" />
-    <access origin="https://*/*" />
+  
     <access origin="tel:*" launch-external="yes" />
     <access origin="market:*" launch-external="yes" />
     <content src="index.html" />
