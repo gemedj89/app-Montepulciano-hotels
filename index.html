@@ -117,37 +117,7 @@
 		});
 	</script>
     
-    <!-- ionic/angularjs js -->
-        <script src="ionic/js/ionic.bundle.js"></script>
-        <script>
-            document.onclick = function (e) {
-                e = e ||  window.event;
-                var element = e.target || e.srcElement;
- 
-                if (element.tagName == 'A') {
-                    window.open(element.href, "_blank", "location=yes");
-                    return false; // prevent default action and stop event propagation
-                }
-            };
-        </script>
-        <script>
-		var example = angular.module('starter', ['ionic', 'ngSanitize']);
- 
-example.run(function($ionicPlatform) {
-    $ionicPlatform.ready(function() {
-        if(window.cordova && window.cordova.plugins.Keyboard) {
-            cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-        }
-        if(window.StatusBar) {
-            StatusBar.styleDefault();
-        }
-    });
-});
- 
-example.controller("ExampleController", function($scope) {
-    $scope.myHTML = 'Check out my programming <a href="http://blog.nraboy.com">blog</a> while you are here';
-});
-		</script>
+   
 </head>
 <body>
  <div data-role="page" id="home">
@@ -293,7 +263,6 @@ Tel: 0039 333 9080979<br>
 Email :info@montepulcianohotels.it<br>
 				  Web : <a href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
                     <a onClick="window.open('http://apache.org', '_blank', 'location=yes')" href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
-                     <p ng-bind-html="myHTML"></p>
                   
                   
 			  </div>
