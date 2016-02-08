@@ -5,11 +5,7 @@
     <description> Montepulciano Hotels</description>
 	
 	
-	
-<plugin name="com.stevenpartridge.inappbrowser" spec="1.4" source="pgb" />
-<feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-</feature>
+
 
  <gap:plugin name="org.apache.cordova.inappbrowser" />
  <access origin="*" browserOnly="true" /> <!-- Allow external links, but only through the browser -->
