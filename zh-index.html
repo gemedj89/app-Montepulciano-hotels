@@ -1,15 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head><meta charset="UTF-8">
-	<title>Hotel Tre Stelle</title>
+	<title>Home</title>
 	<!-- Run in full-screen mode. -->
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<!-- Make the status bar black with white text. -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<!-- Customize home screen title. -->
 	<meta name="apple-mobile-web-app-title" content="Lemonado Web App">
-	
-	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	 <!-- Icons -->
 
@@ -95,47 +93,57 @@
 		  media="(device-width: 320px) and (device-height: 480px)
 			 and (-webkit-device-pixel-ratio: 1)"
 		  rel="apple-touch-startup-image">
-<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
+              <!--css IN LOCALE  -->
+	<link rel="stylesheet" href="assets/css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/owl.carousel.css">
 	<link rel="stylesheet" href="assets/css/owl.theme.css">
 	<link rel="stylesheet" href="assets/css/photoswipe.css">
-	
+	<link rel="stylesheet" href="assets/css/addtohomescreen.css">
 	<script defer type="text/javascript" src="assets/js/klass.min.js"></script>
-		<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    <!--SCRIPT IN LOCALE  -->
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.mobile-1.4.5.min.js"></script>
 	<script defer type="text/javascript" src="assets/js/jstorage.js"></script>
 	<script defer type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
 	<script defer type="text/javascript" src="assets/js/code.photoswipe.jquery-3.0.5.min.js"></script>
 	<script defer type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
 	<script defer src="assets/js/custom.js"></script>
+	<script type="application/javascript" src="assets/js/addtohomescreen.min.js"></script>
+	<script type="text/javascript">
+		addToHomescreen({
+			startDelay: 5,
+			skipFirstVisit: true
+		});
+	</script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="phonegap.js"></script>
 </head>
 <body>
-<div data-role="page" class="single-blog-slider">
+ <div data-role="page" id="home">
 	<div data-role="panel" data-position="left" data-theme="b" data-display="push" id="left_panel">
 		<ul data-role="listview" data-inset="false" data-theme="b">
 			<li><div style="text-align: center;"><img src="assets/img/logo.png" alt="Logo"></div></li>
-			<li><a data-transition="slide" href="index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
-			  
-			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="hotel.html"><img src="assets/img/menu-icons/news.png" alt="Hotels" class="ui-li-icon">Hotels<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-index.html"><img src="assets/img/menu-icons/home.png" alt="Home" class="ui-li-icon">Home</a></li>
+			<li data-role="collapsible" data-inset="false" data-theme="b" data-content-theme="a" data-iconpos="right">
+				
+			</li>
+			<li id="menu_news" class="countable"><a data-transition="slide" data-count="3" href="en-hotel.html"><img src="assets/img/menu-icons/news.png" alt="酒店" class="ui-li-icon">酒店<span class="ui-li-count hidden accent-color"></span></a></li>
 		
 	
-			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="musica.html"><img src="assets/img/menu-icons/video.png" alt="Musica" class="ui-li-icon">Musica<span class="ui-li-count hidden accent-color"></span></a></li>
-			<li><a data-transition="slide" href="information.html"><img src="assets/img/menu-icons/information.png" alt="Informazioni" class="ui-li-icon">Informazioni</a></li>
+			<li id="menu_gallery" class="countable"><a data-transition="slide" data-count="0" href="en-gallery.html"><img src="assets/img/menu-icons/gallery.png" alt="Gallery" class="ui-li-icon">Gallery<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li id="menu_video" class="countable"><a data-transition="slide" data-count="2" href="en-Music.html"><img src="assets/img/menu-icons/video.png" alt="Music" class="ui-li-icon">Music<span class="ui-li-count hidden accent-color"></span></a></li>
+			<li><a data-transition="slide" href="en-information.html"><img src="assets/img/menu-icons/information.png" alt="Information" class="ui-li-icon">Information</a></li>
 			
 			
 		</ul>
 		<div style="position: relative; top: 15px;">
 			<p>Social</p>
-			
+		
 			<a href="https://twitter.com/HotelsPoliziani"><img src="assets/img/panel/twitter.png" alt="Twitter"></a>
-		
 			<a href="https://www.facebook.com/Montepulcianohotels"><img src="assets/img/panel/facebook.png" alt="Facebook"></a>
-			<a href="https://plus.google.com/102332852628162730990"><img src="assets/img/panel/google.png" alt="Google+"></a>
-		
+            <a href="https://plus.google.com/102332852628162730990"><img src="assets/img/panel/google.png" alt="Google+"></a>
+
 		</div>
 	</div>
 	<div data-role="panel" data-theme="b" data-position="right" data-display="push" id="right_panel">
@@ -168,7 +176,7 @@
 		</div>
 	</div>
 	<div id="header" data-role="header" data-position="fixed" data-theme="c">
-		<div class="header_wrapper">
+	<div class="header_wrapper">
 			<a data-theme="c" data-corners="false" data-role="button" data-inline="true" href="#left_panel" class="header_button ui-link ui-btn ui-btn-c ui-btn-inline ui-shadow" style="border-left: none;" role="button">
 				<img alt="Menu" src="assets/img/menu.png" style="width: 100%; height: 100%;" class="header-btn-image">
 				<span class="menu-btn-background"></span>
@@ -195,50 +203,78 @@
 			<div style="clear: both"></div>
 		</div>
 	</div><!-- /header -->
-	<div data-role="content">
-		<div id="blog_post_4_slider" class="owl-carousel owl-active blog-post-slider">
+	<div id="homepage_content" data-role="content">
+		<div class="page-tagline accent-color">
+			<img src="assets/img/logo.png" alt="Logo">
+		</div>
+		<div id="news_slider" class="owl-carousel owl-active homepage-slider">
 				<div class="item">
-					<img src="assets/img/dove-dormire/trestelle/1.jpg" >
-				</div>
-				<div class="item">
-					<img src="assets/img/dove-dormire/trestelle/2.jpg" >
-				</div>
+					
+						<img src="assets/img/content-images/1.jpg" >
 				
-
-                
-              
+				</div>
+				<div class="item">
+					
+						<img src="assets/img/content-images/2.jpg" >
+				
+				</div>
+				<div class="item">
+					
+						<img src="assets/img/content-images/3.jpg">
+				
+				</div>
+			<!--	<div class="item">
+				
+						<img src="assets/img/content-images/4.jpg" >
+				
+				</div>
+				<div class="item">
+					
+						<img src="assets/img/content-images/5.jpg" >
+				
+				</div>
+				<div class="item">
+					
+						<img src="assets/img/content-images/6.jpg">
+					
+				</div> -->
 		</div>
 		<hr style="background: #bebebe;">
 		<div class="container">
-			<article class="blog-article">
-				<h3>Hotel Tre Stelle</h3>
-				<p>L’Hotel Tre Stelle è situato in posizione favorevole, a poche centinaia di metri dalle Terme di Montepulciano, la famosa città del Vino Nobile, e a 3 km dalle Terme di Chianciano.
-Potete inoltre assaporare i piatti tipici della cucina toscana realizzati attraverso l’esperienza decennale che solo un gestione familiare può garantire. Tra i servizi presenti all’interno dell’hotel, bar e ascensore.
-COMPLETAMENTE RISTRUTTURATO NEL 2003.</p>
+        
+			<h3 style="text-transform:uppercase"><br>
 
+<span style="color:#970d25;">MONTEPULCIANO HOTELS</span><br>
+Montepulciano hotels Toscana</h3>
+			<p>一座美丽的小镇，因其艺术和建筑遗产被称为文艺复兴之明珠，原封不动一直保持着它原有的美丽。攀上陡峭的村落，游人们会在这里发现美丽的宫殿和教堂，它们由文艺复兴时期最伟大的艺术家们倾心建造而成。</p>
+	  <div class="feature_wrap">
+				<hr style="background: #bebebe; margin: 15px 0px;">
+				<div class="feature accent-color">
+					<img src="assets/img/feature-1.png" alt="Feature 1">
+				</div>
+				<div class="feature_description">
+					<h3><a data-transition="slide" data-count="3" href="en-hotel.html">最好的酒店</a></h3>
+					<p>在蒙特普尔恰诺的众多酒店里选择您心仪的那个</p>
+				</div>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+			</div>
+			<div class="feature_wrap">
+				<div class="feature accent-color">
+					<img src="assets/img/info-icon.png" alt="Feature 1">
+				</div>
+				<div class="feature_description">
+					<h3><a data-transition="slide" data-count="3" href="information.html">Information</a></h3>
+					<p>Associazione Albergatori Montepulciano 
+Piazza Grande 7 Montepulciano<br>
 
+Phone: 0039 333 9080979<br>
 
-<h3>Contatti</h3>
-                <img style="float: left;" src="assets/img/info.png" alt="Info">
-			<p style="color: #403e3e; padding-left: 35px;">Via Terme Sud, 115 53045 Montepulciano (SI)</p>
-	    <img style="float: left;" src="assets/img/tel.png" alt="Tel">
-			<p style="color: #403e3e; padding-left: 35px;"> <span dir="ltr" id=":uo">Tel. 0578 798008 / 0578 798078</span><br>
-			</p>
-            
-            <p>
-            <img style="float: left;" src="assets/img/web.png" alt="web">
-			<p style="color: #403e3e; padding-left: 35px;"> <a href="http://www.albergotrestelle.com">www.albergotrestelle.com</a></p>
-  </p>
-            
-            
-	    <img style="float: left;" src="assets/img/mail.png" alt="Email">
-			<p style="color: #403e3e; padding-left: 35px;"> hotel.trestelle@libero.it</p>
-  <a onClick="window.open('http://www.trestellemontepulciano.com/it-IT/contatti-hotel-albergo-tre-stelle-it', '_blank', 'location=yes')" href="http://www.montepulcianohotels.it">          
-  <input type="button" value="Prenota"></a>
-
-				<div class="clear"></div>
-				<hr style="background: #bebebe; margin: 30px 0;">
-			</article>
+Email :info@montepulcianohotels.it<br>
+				  Web : <a onClick="window.open('http://www.montepulcianohotels.it', '_blank', 'location=yes')" href="http://www.montepulcianohotels.it">www.montepulcianohotels.it</a></p>
+			  </div>
+				<hr style="background: #bebebe; margin: 15px 0px;">
+			</div>
+			
 		</div>
 				<div>
 					<h6 class="footer-text">Copyright 2015 - 2020. All rights reserved</h6>

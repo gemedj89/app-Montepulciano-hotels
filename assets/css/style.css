@@ -157,15 +157,15 @@ body a:visited  {
 	position: relative;
 }
 .page_title {
-	display: inline-block;
-	font-size: 100%;
-	line-height: 45px;
-	margin: 0px -95px 0px -55px;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
-	height: 45px;
-}
+    display: inline-block;
+    font-size: 100%;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 -95px 0 -152px;
+    text-align: center;
+    vertical-align: middle;
+      width: 100%;
+	}
 .header_button {
 	border-top: none;
 	border-left: 1px #8c8a8a solid;
