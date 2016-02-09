@@ -6,9 +6,7 @@
 	
 	
 
-<feature name="InAppBrowser">
-    <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-</feature>
+<plugin name="cordova-plugin-inappbrowser" source="npm" />
 
  <access origin="*" browserOnly="true" /> <!-- Allow external links, but only through the browser -->
 
